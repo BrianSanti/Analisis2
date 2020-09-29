@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\PrototipoMRP",
-    "\\PrototipoMRP\\bin",
-    "\\PrototipoMRP\\obj"
+    "\\MRP"
   ],
-  "SelectedNode": "\\PrototipoMRP\\App.config",
+  "SelectedNode": "\\MRP\\MRP.sln",
   "PreviewInSolutionExplorer": false
 }

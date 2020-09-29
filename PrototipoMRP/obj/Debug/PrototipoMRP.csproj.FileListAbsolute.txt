@@ -1,0 +1,31 @@
+C:\Users\Brian\Desktop\PrototipoMRP\bin\Debug\PrototipoMRP.exe.config
+C:\Users\Brian\Desktop\PrototipoMRP\bin\Debug\PrototipoMRP.exe
+C:\Users\Brian\Desktop\PrototipoMRP\bin\Debug\PrototipoMRP.pdb
+C:\Users\Brian\Desktop\PrototipoMRP\obj\Debug\PrototipoMRP.csprojAssemblyReference.cache
+C:\Users\Brian\Desktop\PrototipoMRP\obj\Debug\PrototipoMRP.Properties.Resources.resources
+C:\Users\Brian\Desktop\PrototipoMRP\obj\Debug\PrototipoMRP.csproj.GenerateResource.cache
+C:\Users\Brian\Desktop\PrototipoMRP\obj\Debug\PrototipoMRP.csproj.CoreCompileInputs.cache
+C:\Users\Brian\Desktop\PrototipoMRP\obj\Debug\PrototipoMRP.exe
+C:\Users\Brian\Desktop\PrototipoMRP\obj\Debug\PrototipoMRP.pdb
+C:\Users\Brian\Desktop\PrototipoMRP\obj\Debug\PrototipoMRP.frmOrdenes.resources
+C:\Users\Brian\Desktop\PrototipoMRP\obj\Debug\PrototipoMRP.frmCompleta.resources
+C:\Users\Brian\Desktop\PrototipoMRP\obj\Debug\PrototipoMRP.frmEntradas.resources
+C:\Users\Brian\Desktop\PrototipoMRP\obj\Debug\PrototipoMRP.frmAlta.resources
+C:\Users\Brian\Desktop\PrototipoMRP\obj\Debug\PrototipoMRP.frmAyudaProductos.resources
+C:\Users\Brian\Desktop\PrototipoMRP\obj\Debug\PrototipoMRP.frmInsumo.resources
+C:\Users\Brian\Desktop\Nueva carpeta\PrototipoMRP\bin\Debug\PrototipoMRP.exe.config
+C:\Users\Brian\Desktop\Nueva carpeta\PrototipoMRP\bin\Debug\PrototipoMRP.exe
+C:\Users\Brian\Desktop\Nueva carpeta\PrototipoMRP\bin\Debug\PrototipoMRP.pdb
+C:\Users\Brian\Desktop\Nueva carpeta\PrototipoMRP\obj\Debug\PrototipoMRP.csprojAssemblyReference.cache
+C:\Users\Brian\Desktop\Nueva carpeta\PrototipoMRP\obj\Debug\PrototipoMRP.frmAlta.resources
+C:\Users\Brian\Desktop\Nueva carpeta\PrototipoMRP\obj\Debug\PrototipoMRP.frmAyudaProductos.resources
+C:\Users\Brian\Desktop\Nueva carpeta\PrototipoMRP\obj\Debug\PrototipoMRP.frmCompleta.resources
+C:\Users\Brian\Desktop\Nueva carpeta\PrototipoMRP\obj\Debug\PrototipoMRP.frmEntradas.resources
+C:\Users\Brian\Desktop\Nueva carpeta\PrototipoMRP\obj\Debug\PrototipoMRP.frmInsumo.resources
+C:\Users\Brian\Desktop\Nueva carpeta\PrototipoMRP\obj\Debug\PrototipoMRP.frmOrdenes.resources
+C:\Users\Brian\Desktop\Nueva carpeta\PrototipoMRP\obj\Debug\PrototipoMRP.frmProductos.resources
+C:\Users\Brian\Desktop\Nueva carpeta\PrototipoMRP\obj\Debug\PrototipoMRP.Properties.Resources.resources
+C:\Users\Brian\Desktop\Nueva carpeta\PrototipoMRP\obj\Debug\PrototipoMRP.csproj.GenerateResource.cache
+C:\Users\Brian\Desktop\Nueva carpeta\PrototipoMRP\obj\Debug\PrototipoMRP.csproj.CoreCompileInputs.cache
+C:\Users\Brian\Desktop\Nueva carpeta\PrototipoMRP\obj\Debug\PrototipoMRP.exe
+C:\Users\Brian\Desktop\Nueva carpeta\PrototipoMRP\obj\Debug\PrototipoMRP.pdb
