@@ -1,0 +1,14 @@
+C:\Users\Brian\source\repos\MRP\bin\Debug\MRP.dll
+C:\Users\Brian\source\repos\MRP\bin\Debug\MRP.pdb
+C:\Users\Brian\source\repos\MRP\obj\Debug\VistaMRP.csprojAssemblyReference.cache
+C:\Users\Brian\source\repos\MRP\obj\Debug\PrototipoMRP.frmAlta.resources
+C:\Users\Brian\source\repos\MRP\obj\Debug\PrototipoMRP.frmAyudaProductos.resources
+C:\Users\Brian\source\repos\MRP\obj\Debug\PrototipoMRP.frmCompleta.resources
+C:\Users\Brian\source\repos\MRP\obj\Debug\PrototipoMRP.frmEntradas.resources
+C:\Users\Brian\source\repos\MRP\obj\Debug\PrototipoMRP.frmInsumo.resources
+C:\Users\Brian\source\repos\MRP\obj\Debug\PrototipoMRP.frmOrdenes.resources
+C:\Users\Brian\source\repos\MRP\obj\Debug\PrototipoMRP.frmProductos.resources
+C:\Users\Brian\source\repos\MRP\obj\Debug\VistaMRP.csproj.GenerateResource.cache
+C:\Users\Brian\source\repos\MRP\obj\Debug\VistaMRP.csproj.CoreCompileInputs.cache
+C:\Users\Brian\source\repos\MRP\obj\Debug\MRP.dll
+C:\Users\Brian\source\repos\MRP\obj\Debug\MRP.pdb
