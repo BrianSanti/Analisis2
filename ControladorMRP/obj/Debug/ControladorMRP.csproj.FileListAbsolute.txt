@@ -1,0 +1,6 @@
+C:\Users\Brian\source\repos\ControladorMRP\bin\Debug\ControladorMRP.dll
+C:\Users\Brian\source\repos\ControladorMRP\bin\Debug\ControladorMRP.pdb
+C:\Users\Brian\source\repos\ControladorMRP\obj\Debug\ControladorMRP.csprojAssemblyReference.cache
+C:\Users\Brian\source\repos\ControladorMRP\obj\Debug\ControladorMRP.csproj.CoreCompileInputs.cache
+C:\Users\Brian\source\repos\ControladorMRP\obj\Debug\ControladorMRP.dll
+C:\Users\Brian\source\repos\ControladorMRP\obj\Debug\ControladorMRP.pdb

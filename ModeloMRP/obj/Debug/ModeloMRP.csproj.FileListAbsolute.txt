@@ -1,0 +1,6 @@
+C:\Users\Brian\source\repos\ModeloMRP\bin\Debug\ModeloMRP.dll
+C:\Users\Brian\source\repos\ModeloMRP\bin\Debug\ModeloMRP.pdb
+C:\Users\Brian\source\repos\ModeloMRP\obj\Debug\ModeloMRP.csprojAssemblyReference.cache
+C:\Users\Brian\source\repos\ModeloMRP\obj\Debug\ModeloMRP.csproj.CoreCompileInputs.cache
+C:\Users\Brian\source\repos\ModeloMRP\obj\Debug\ModeloMRP.dll
+C:\Users\Brian\source\repos\ModeloMRP\obj\Debug\ModeloMRP.pdb
