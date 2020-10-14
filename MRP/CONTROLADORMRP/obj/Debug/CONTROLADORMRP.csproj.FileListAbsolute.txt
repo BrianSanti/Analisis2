@@ -1,0 +1,9 @@
+C:\Users\Brian\Desktop\PROTOPRO\MRP\CONTROLADORMRP\bin\Debug\CONTROLADORMRP.dll
+C:\Users\Brian\Desktop\PROTOPRO\MRP\CONTROLADORMRP\bin\Debug\CONTROLADORMRP.pdb
+C:\Users\Brian\Desktop\PROTOPRO\MRP\CONTROLADORMRP\obj\Debug\CONTROLADORMRP.csprojAssemblyReference.cache
+C:\Users\Brian\Desktop\PROTOPRO\MRP\CONTROLADORMRP\obj\Debug\CONTROLADORMRP.csproj.CoreCompileInputs.cache
+C:\Users\Brian\Desktop\PROTOPRO\MRP\CONTROLADORMRP\obj\Debug\CONTROLADORMRP.dll
+C:\Users\Brian\Desktop\PROTOPRO\MRP\CONTROLADORMRP\obj\Debug\CONTROLADORMRP.pdb
+C:\Users\Brian\Desktop\PROTOPRO\MRP\CONTROLADORMRP\bin\Debug\MODELOMRP.dll
+C:\Users\Brian\Desktop\PROTOPRO\MRP\CONTROLADORMRP\bin\Debug\MODELOMRP.pdb
+C:\Users\Brian\Desktop\PROTOPRO\MRP\CONTROLADORMRP\obj\Debug\CONTROLADORMRP.csproj.CopyComplete

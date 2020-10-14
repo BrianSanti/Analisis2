@@ -1,0 +1,17 @@
+C:\Users\Brian\Desktop\PROTOPRO\MRP\VISTAMRP\bin\Debug\VISTAMRP.dll
+C:\Users\Brian\Desktop\PROTOPRO\MRP\VISTAMRP\bin\Debug\VISTAMRP.pdb
+C:\Users\Brian\Desktop\PROTOPRO\MRP\VISTAMRP\obj\Debug\VISTAMRP.csprojAssemblyReference.cache
+C:\Users\Brian\Desktop\PROTOPRO\MRP\VISTAMRP\obj\Debug\VISTAMRP.csproj.CoreCompileInputs.cache
+C:\Users\Brian\Desktop\PROTOPRO\MRP\VISTAMRP\obj\Debug\VISTAMRP.dll
+C:\Users\Brian\Desktop\PROTOPRO\MRP\VISTAMRP\obj\Debug\VISTAMRP.pdb
+C:\Users\Brian\Desktop\PROTOPRO\MRP\VISTAMRP\bin\Debug\CONTROLADORMRP.dll
+C:\Users\Brian\Desktop\PROTOPRO\MRP\VISTAMRP\bin\Debug\CONTROLADORMRP.pdb
+C:\Users\Brian\Desktop\PROTOPRO\MRP\VISTAMRP\obj\Debug\VISTAMRP.csproj.CopyComplete
+C:\Users\Brian\Desktop\PROTOPRO\MRP\VISTAMRP\obj\Debug\VISTAMRP.frmPrincipal.resources
+C:\Users\Brian\Desktop\PROTOPRO\MRP\VISTAMRP\obj\Debug\VISTAMRP.csproj.GenerateResource.cache
+C:\Users\Brian\Desktop\PROTOPRO\MRP\VISTAMRP\obj\Debug\VISTAMRP.Properties.Resources.resources
+C:\Users\Brian\Desktop\PROTOPRO\MRP\VISTAMRP\obj\Debug\VISTAMRP.frmControlCalidad.resources
+C:\Users\Brian\Desktop\PROTOPRO\MRP\VISTAMRP\obj\Debug\VISTAMRP.frmEmpleadoh.resources
+C:\Users\Brian\Desktop\PROTOPRO\MRP\VISTAMRP\obj\Debug\VISTAMRP.frmProducto.resources
+C:\Users\Brian\Desktop\PROTOPRO\MRP\VISTAMRP\obj\Debug\VISTAMRP.frmOrdenes.resources
+C:\Users\Brian\Desktop\PROTOPRO\MRP\VISTAMRP\obj\Debug\VISTAMRP.frmInventario.resources
