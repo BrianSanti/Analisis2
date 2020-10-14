@@ -113,6 +113,7 @@
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(235, 22);
             this.txtFecha.TabIndex = 12;
+            this.txtFecha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventFecha);
             // 
             // txtCantidad
             // 
@@ -120,6 +121,7 @@
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(235, 22);
             this.txtCantidad.TabIndex = 13;
+            this.txtCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventCantidad);
             // 
             // txtEstado
             // 
@@ -127,6 +129,7 @@
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(235, 22);
             this.txtEstado.TabIndex = 14;
+            this.txtEstado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventEstado);
             // 
             // cmbEncargado
             // 
@@ -135,6 +138,7 @@
             this.cmbEncargado.Name = "cmbEncargado";
             this.cmbEncargado.Size = new System.Drawing.Size(234, 24);
             this.cmbEncargado.TabIndex = 15;
+            this.cmbEncargado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventEncargado);
             // 
             // dgvOrdenes
             // 
@@ -173,8 +177,11 @@
             this.Controls.Add(this.lblFechaE);
             this.Controls.Add(this.lblOrdenesTitulo);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmOrdenes";
             this.Text = "frmOrdenes";
+            this.Load += new System.EventHandler(this.frmOrdenes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrdenes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

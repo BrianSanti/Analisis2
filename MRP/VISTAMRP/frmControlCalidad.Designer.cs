@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmControlCalidad));
             this.lblOrden = new System.Windows.Forms.Label();
             this.lblControltitulo = new System.Windows.Forms.Label();
             this.lblInventario = new System.Windows.Forms.Label();
@@ -40,7 +39,6 @@
             this.cmbResultado = new System.Windows.Forms.ComboBox();
             this.btnIngresar = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
-            this.btnAyuda = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblOrden
@@ -106,6 +104,8 @@
             this.cmbOrden.Name = "cmbOrden";
             this.cmbOrden.Size = new System.Drawing.Size(203, 24);
             this.cmbOrden.TabIndex = 7;
+            this.cmbOrden.SelectedIndexChanged += new System.EventHandler(this.cmbOrden_SelectedIndexChanged);
+            this.cmbOrden.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventOrden);
             // 
             // cmbInventario
             // 
@@ -114,6 +114,7 @@
             this.cmbInventario.Name = "cmbInventario";
             this.cmbInventario.Size = new System.Drawing.Size(203, 24);
             this.cmbInventario.TabIndex = 8;
+            this.cmbInventario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventInventario);
             // 
             // cmEmpleado
             // 
@@ -122,6 +123,8 @@
             this.cmEmpleado.Name = "cmEmpleado";
             this.cmEmpleado.Size = new System.Drawing.Size(203, 24);
             this.cmEmpleado.TabIndex = 9;
+            this.cmEmpleado.SelectedIndexChanged += new System.EventHandler(this.cmEmpleado_SelectedIndexChanged);
+            this.cmEmpleado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventEmpleado);
             // 
             // cmbResultado
             // 
@@ -130,6 +133,8 @@
             this.cmbResultado.Name = "cmbResultado";
             this.cmbResultado.Size = new System.Drawing.Size(203, 24);
             this.cmbResultado.TabIndex = 10;
+            this.cmbResultado.SelectedIndexChanged += new System.EventHandler(this.cmbResultado_SelectedIndexChanged);
+            this.cmbResultado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventResultado);
             // 
             // btnIngresar
             // 
@@ -151,22 +156,11 @@
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = true;
             // 
-            // btnAyuda
-            // 
-            this.btnAyuda.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAyuda.Image = ((System.Drawing.Image)(resources.GetObject("btnAyuda.Image")));
-            this.btnAyuda.Location = new System.Drawing.Point(479, 465);
-            this.btnAyuda.Name = "btnAyuda";
-            this.btnAyuda.Size = new System.Drawing.Size(54, 41);
-            this.btnAyuda.TabIndex = 13;
-            this.btnAyuda.UseVisualStyleBackColor = true;
-            // 
             // frmControlCalidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(532, 503);
-            this.Controls.Add(this.btnAyuda);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.cmbResultado);
@@ -178,6 +172,8 @@
             this.Controls.Add(this.lblInventario);
             this.Controls.Add(this.lblOrden);
             this.Controls.Add(this.lblControltitulo);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmControlCalidad";
             this.Text = "frmControlCalidad";
             this.Load += new System.EventHandler(this.frmControlCalidad_Load);
@@ -199,6 +195,5 @@
         private System.Windows.Forms.ComboBox cmbResultado;
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.Button btnRegresar;
-        private System.Windows.Forms.Button btnAyuda;
     }
 }

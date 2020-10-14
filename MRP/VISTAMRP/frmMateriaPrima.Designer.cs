@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMateriaPrima));
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtEstado = new System.Windows.Forms.TextBox();
-            this.txtMarca = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -43,7 +42,10 @@
             this.lblMateriaTitulo = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnAyuda = new System.Windows.Forms.Button();
+            this.cmbMarca = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -60,34 +62,31 @@
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(235, 22);
             this.txtEstado.TabIndex = 25;
-            // 
-            // txtMarca
-            // 
-            this.txtMarca.Location = new System.Drawing.Point(285, 395);
-            this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(235, 22);
-            this.txtMarca.TabIndex = 24;
+            this.txtEstado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventEstado);
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(285, 334);
+            this.txtPrecio.Location = new System.Drawing.Point(262, 142);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(235, 22);
             this.txtPrecio.TabIndex = 23;
+            this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventPrecio);
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(285, 271);
+            this.txtDescripcion.Location = new System.Drawing.Point(262, 79);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(235, 22);
             this.txtDescripcion.TabIndex = 22;
+            this.txtDescripcion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventDescripcion);
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(285, 213);
+            this.txtNombre.Location = new System.Drawing.Point(262, 21);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(235, 22);
             this.txtNombre.TabIndex = 21;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventNombre);
             // 
             // lblEstado
             // 
@@ -116,7 +115,7 @@
             this.lblPrecio.AutoSize = true;
             this.lblPrecio.BackColor = System.Drawing.Color.Transparent;
             this.lblPrecio.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(43, 336);
+            this.lblPrecio.Location = new System.Drawing.Point(20, 144);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(60, 20);
             this.lblPrecio.TabIndex = 18;
@@ -127,7 +126,7 @@
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.BackColor = System.Drawing.Color.Transparent;
             this.lblDescripcion.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.Location = new System.Drawing.Point(43, 273);
+            this.lblDescripcion.Location = new System.Drawing.Point(20, 81);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(104, 20);
             this.lblDescripcion.TabIndex = 17;
@@ -138,7 +137,7 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(43, 214);
+            this.lblNombre.Location = new System.Drawing.Point(20, 22);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(73, 20);
             this.lblNombre.TabIndex = 16;
@@ -175,28 +174,50 @@
             this.btnAyuda.TabIndex = 27;
             this.btnAyuda.UseVisualStyleBackColor = true;
             // 
+            // cmbMarca
+            // 
+            this.cmbMarca.FormattingEnabled = true;
+            this.cmbMarca.Location = new System.Drawing.Point(285, 395);
+            this.cmbMarca.Name = "cmbMarca";
+            this.cmbMarca.Size = new System.Drawing.Size(234, 24);
+            this.cmbMarca.TabIndex = 28;
+            this.cmbMarca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventMarca);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtPrecio);
+            this.groupBox1.Controls.Add(this.txtDescripcion);
+            this.groupBox1.Controls.Add(this.txtNombre);
+            this.groupBox1.Controls.Add(this.lblPrecio);
+            this.groupBox1.Controls.Add(this.lblDescripcion);
+            this.groupBox1.Controls.Add(this.lblNombre);
+            this.groupBox1.Location = new System.Drawing.Point(22, 193);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(527, 184);
+            this.groupBox1.TabIndex = 29;
+            this.groupBox1.TabStop = false;
+            // 
             // frmMateriaPrima
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1282, 503);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.cmbMarca);
             this.Controls.Add(this.btnAyuda);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtEstado);
-            this.Controls.Add(this.txtMarca);
-            this.Controls.Add(this.txtPrecio);
-            this.Controls.Add(this.txtDescripcion);
-            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.lblMarca);
-            this.Controls.Add(this.lblPrecio);
-            this.Controls.Add(this.lblDescripcion);
-            this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblMateriaTitulo);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmMateriaPrima";
             this.Text = "frmMateriaPrima";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,7 +227,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtEstado;
-        private System.Windows.Forms.TextBox txtMarca;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.TextBox txtNombre;
@@ -218,5 +238,7 @@
         private System.Windows.Forms.Label lblMateriaTitulo;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnAyuda;
+        private System.Windows.Forms.ComboBox cmbMarca;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

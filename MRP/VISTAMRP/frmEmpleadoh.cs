@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CONTROLADORMRP;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,35 @@ namespace VISTAMRP
 {
     public partial class frmEmpleadoh : Form
     {
+        VALIDACIONES va = new VALIDACIONES();
         public frmEmpleadoh()
         {
             InitializeComponent();
+        }
+
+        private void cmbEmpleado_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void eventEmpleado(object sender, KeyPressEventArgs e)
+        {
+            va.Combobox(e);
+        }
+
+        private void eventTiempo(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void eventTiempo(object sender, KeyPressEventArgs e)
+        {
+            va.CamposNumerosYLetras(e);
+        }
+
+        private void eventOrden(object sender, KeyPressEventArgs e)
+        {
+            va.CamposNumerosYLetras(e);
         }
     }
 }

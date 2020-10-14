@@ -111,6 +111,8 @@
             this.Controls.Add(this.dgv3);
             this.Controls.Add(this.dgv2);
             this.Controls.Add(this.dgv1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmInventario";
             this.Text = "frmInventario";
             this.Load += new System.EventHandler(this.frmInventario_Load);

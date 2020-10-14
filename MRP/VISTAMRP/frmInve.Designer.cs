@@ -80,6 +80,7 @@
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(203, 24);
             this.cmbTipo.TabIndex = 22;
+            this.cmbTipo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventTipo);
             // 
             // cmbMateria
             // 
@@ -88,6 +89,8 @@
             this.cmbMateria.Name = "cmbMateria";
             this.cmbMateria.Size = new System.Drawing.Size(203, 24);
             this.cmbMateria.TabIndex = 19;
+            this.cmbMateria.SelectedIndexChanged += new System.EventHandler(this.cmbMateria_SelectedIndexChanged);
+            this.cmbMateria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventMateria);
             // 
             // lblTipo
             // 
@@ -150,6 +153,8 @@
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(201, 22);
             this.txtFecha.TabIndex = 26;
+            this.txtFecha.TextChanged += new System.EventHandler(this.txtFecha_TextChanged);
+            this.txtFecha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventFecha);
             // 
             // txtCantidad
             // 
@@ -157,6 +162,7 @@
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(201, 22);
             this.txtCantidad.TabIndex = 27;
+            this.txtCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventCantidad);
             // 
             // frmInve
             // 
@@ -175,6 +181,8 @@
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblMateria);
             this.Controls.Add(this.lblInveTitutlo);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmInve";
             this.Text = "frmInve";
             this.ResumeLayout(false);
