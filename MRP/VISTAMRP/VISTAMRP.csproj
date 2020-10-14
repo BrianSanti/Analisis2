@@ -58,11 +58,23 @@
     <Compile Include="frmEmpleadoh.Designer.cs">
       <DependentUpon>frmEmpleadoh.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmInve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInve.Designer.cs">
+      <DependentUpon>frmInve.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmInventario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmInventario.Designer.cs">
       <DependentUpon>frmInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMateriaPrima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMateriaPrima.Designer.cs">
+      <DependentUpon>frmMateriaPrima.cs</DependentUpon>
     </Compile>
     <Compile Include="frmOrdenes.cs">
       <SubType>Form</SubType>
@@ -97,8 +109,14 @@
     <EmbeddedResource Include="frmEmpleadoh.resx">
       <DependentUpon>frmEmpleadoh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmInve.resx">
+      <DependentUpon>frmInve.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmInventario.resx">
       <DependentUpon>frmInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMateriaPrima.resx">
+      <DependentUpon>frmMateriaPrima.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmOrdenes.resx">
       <DependentUpon>frmOrdenes.cs</DependentUpon>
