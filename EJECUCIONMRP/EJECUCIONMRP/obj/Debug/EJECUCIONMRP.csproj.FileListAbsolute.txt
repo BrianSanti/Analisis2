@@ -10,3 +10,17 @@ C:\Users\Brian\Desktop\PROTOPRO\EJECUCIONMRP\EJECUCIONMRP\bin\Debug\VISTAMRP.pdb
 C:\Users\Brian\Desktop\PROTOPRO\EJECUCIONMRP\EJECUCIONMRP\obj\Debug\EJECUCIONMRP.csproj.CopyComplete
 C:\Users\Brian\Desktop\PROTOPRO\EJECUCIONMRP\EJECUCIONMRP\obj\Debug\EJECUCIONMRP.exe
 C:\Users\Brian\Desktop\PROTOPRO\EJECUCIONMRP\EJECUCIONMRP\obj\Debug\EJECUCIONMRP.pdb
+C:\Users\Brian\Desktop\Analisis2\EJECUCIONMRP\EJECUCIONMRP\bin\Debug\EJECUCIONMRP.exe.config
+C:\Users\Brian\Desktop\Analisis2\EJECUCIONMRP\EJECUCIONMRP\bin\Debug\EJECUCIONMRP.exe
+C:\Users\Brian\Desktop\Analisis2\EJECUCIONMRP\EJECUCIONMRP\bin\Debug\EJECUCIONMRP.pdb
+C:\Users\Brian\Desktop\Analisis2\EJECUCIONMRP\EJECUCIONMRP\bin\Debug\VISTAMRP.dll
+C:\Users\Brian\Desktop\Analisis2\EJECUCIONMRP\EJECUCIONMRP\bin\Debug\CONTROLADORMRP.dll
+C:\Users\Brian\Desktop\Analisis2\EJECUCIONMRP\EJECUCIONMRP\bin\Debug\VISTAMRP.pdb
+C:\Users\Brian\Desktop\Analisis2\EJECUCIONMRP\EJECUCIONMRP\bin\Debug\CONTROLADORMRP.pdb
+C:\Users\Brian\Desktop\Analisis2\EJECUCIONMRP\EJECUCIONMRP\obj\Debug\EJECUCIONMRP.csprojAssemblyReference.cache
+C:\Users\Brian\Desktop\Analisis2\EJECUCIONMRP\EJECUCIONMRP\obj\Debug\EJECUCIONMRP.Properties.Resources.resources
+C:\Users\Brian\Desktop\Analisis2\EJECUCIONMRP\EJECUCIONMRP\obj\Debug\EJECUCIONMRP.csproj.GenerateResource.cache
+C:\Users\Brian\Desktop\Analisis2\EJECUCIONMRP\EJECUCIONMRP\obj\Debug\EJECUCIONMRP.csproj.CoreCompileInputs.cache
+C:\Users\Brian\Desktop\Analisis2\EJECUCIONMRP\EJECUCIONMRP\obj\Debug\EJECUCIONMRP.csproj.CopyComplete
+C:\Users\Brian\Desktop\Analisis2\EJECUCIONMRP\EJECUCIONMRP\obj\Debug\EJECUCIONMRP.exe
+C:\Users\Brian\Desktop\Analisis2\EJECUCIONMRP\EJECUCIONMRP\obj\Debug\EJECUCIONMRP.pdb
