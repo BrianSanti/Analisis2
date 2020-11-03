@@ -214,6 +214,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmMateriaPrima";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMateriaPrima";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);

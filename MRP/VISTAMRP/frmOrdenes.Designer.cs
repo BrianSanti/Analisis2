@@ -180,6 +180,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmOrdenes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmOrdenes";
             this.Load += new System.EventHandler(this.frmOrdenes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrdenes)).EndInit();

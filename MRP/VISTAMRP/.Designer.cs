@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.productoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.controlDeCalidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,6 +37,7 @@
             this.materiaPrimaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordenesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pnlPadre = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,21 +61,21 @@
             // productoToolStripMenuItem
             // 
             this.productoToolStripMenuItem.Name = "productoToolStripMenuItem";
-            this.productoToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.productoToolStripMenuItem.Size = new System.Drawing.Size(83, 26);
             this.productoToolStripMenuItem.Text = "Producto";
             this.productoToolStripMenuItem.Click += new System.EventHandler(this.productoToolStripMenuItem_Click);
             // 
             // controlDeCalidadToolStripMenuItem
             // 
             this.controlDeCalidadToolStripMenuItem.Name = "controlDeCalidadToolStripMenuItem";
-            this.controlDeCalidadToolStripMenuItem.Size = new System.Drawing.Size(148, 24);
+            this.controlDeCalidadToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
             this.controlDeCalidadToolStripMenuItem.Text = "Control de Calidad";
             this.controlDeCalidadToolStripMenuItem.Click += new System.EventHandler(this.controlDeCalidadToolStripMenuItem_Click);
             // 
             // empleadosToolStripMenuItem
             // 
             this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(97, 24);
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(97, 26);
             this.empleadosToolStripMenuItem.Text = "Empleados";
             this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
             // 
@@ -84,7 +84,7 @@
             this.inventarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inventariadoToolStripMenuItem});
             this.inventarioToolStripMenuItem.Name = "inventarioToolStripMenuItem";
-            this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
+            this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(89, 26);
             this.inventarioToolStripMenuItem.Text = "Inventario";
             this.inventarioToolStripMenuItem.Click += new System.EventHandler(this.inventarioToolStripMenuItem_Click);
             // 
@@ -98,30 +98,40 @@
             // materiaPrimaToolStripMenuItem
             // 
             this.materiaPrimaToolStripMenuItem.Name = "materiaPrimaToolStripMenuItem";
-            this.materiaPrimaToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
+            this.materiaPrimaToolStripMenuItem.Size = new System.Drawing.Size(116, 26);
             this.materiaPrimaToolStripMenuItem.Text = "Materia Prima";
             this.materiaPrimaToolStripMenuItem.Click += new System.EventHandler(this.materiaPrimaToolStripMenuItem_Click);
             // 
             // ordenesToolStripMenuItem
             // 
             this.ordenesToolStripMenuItem.Name = "ordenesToolStripMenuItem";
-            this.ordenesToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
+            this.ordenesToolStripMenuItem.Size = new System.Drawing.Size(78, 26);
             this.ordenesToolStripMenuItem.Text = "Ordenes";
             this.ordenesToolStripMenuItem.Click += new System.EventHandler(this.ordenesToolStripMenuItem_Click);
             // 
             // productoToolStripMenuItem1
             // 
             this.productoToolStripMenuItem1.Name = "productoToolStripMenuItem1";
-            this.productoToolStripMenuItem1.Size = new System.Drawing.Size(83, 24);
+            this.productoToolStripMenuItem1.Size = new System.Drawing.Size(83, 26);
             this.productoToolStripMenuItem1.Text = "Producto";
             this.productoToolStripMenuItem1.Click += new System.EventHandler(this.productoToolStripMenuItem1_Click);
+            // 
+            // pnlPadre
+            // 
+            this.pnlPadre.AutoSize = true;
+            this.pnlPadre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlPadre.Location = new System.Drawing.Point(0, 28);
+            this.pnlPadre.Name = "pnlPadre";
+            this.pnlPadre.Size = new System.Drawing.Size(932, 475);
+            this.pnlPadre.TabIndex = 1;
+            this.pnlPadre.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlPadre_Paint);
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(932, 503);
+            this.Controls.Add(this.pnlPadre);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
@@ -148,5 +158,6 @@
         private System.Windows.Forms.ToolStripMenuItem materiaPrimaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ordenesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productoToolStripMenuItem1;
+        private System.Windows.Forms.Panel pnlPadre;
     }
 }

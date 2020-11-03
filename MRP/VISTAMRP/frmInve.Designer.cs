@@ -184,6 +184,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmInve";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmInve";
             this.ResumeLayout(false);
             this.PerformLayout();

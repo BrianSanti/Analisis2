@@ -145,6 +145,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmEmpleadoh";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEmpleadoh";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

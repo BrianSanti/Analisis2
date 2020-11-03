@@ -17,6 +17,13 @@ namespace VISTAMRP
             InitializeComponent();
         }
 
+        public void AddFormulario(Form f) {
+
+            f.TopLevel = false;
+            this.pnlPadre.Controls.Add(f);
+            f.Show();   
+        }
+
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
 
@@ -25,57 +32,61 @@ namespace VISTAMRP
         private void productoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmProducto usu = new frmProducto();
-            usu.Show();
+            AddFormulario(usu);
             
         }
 
         private void controlDeCalidadToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmControlCalidad usu = new frmControlCalidad();
-            usu.Show();
-            
+            AddFormulario(usu);
         }
 
         private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmEmpleadoh usu = new frmEmpleadoh();
-            usu.Show();
-            
+            AddFormulario(usu);
+
         }
 
         private void inventarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmInventario usu = new frmInventario();
-            usu.Show();
-            
+            AddFormulario(usu);
+
         }
 
         private void inventariadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmInve usu = new frmInve();
-            usu.Show();
-            
+            AddFormulario(usu);
+
         }
 
         private void materiaPrimaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmMateriaPrima usu = new frmMateriaPrima();
-            usu.Show();
-            
+            AddFormulario(usu);
+
         }
 
         private void ordenesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmOrdenes usu = new frmOrdenes();
-            usu.Show();
-            
+            AddFormulario(usu);
+
         }
 
         private void productoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             frmProducto usu = new frmProducto();
-            usu.Show();
-            
+            AddFormulario(usu);
+
+        }
+
+        private void pnlPadre_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

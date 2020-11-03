@@ -146,6 +146,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmProducto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmProducto";
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducto)).EndInit();
             this.groupBox1.ResumeLayout(false);

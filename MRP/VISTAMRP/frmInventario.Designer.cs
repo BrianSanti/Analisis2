@@ -114,6 +114,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmInventario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmInventario";
             this.Load += new System.EventHandler(this.frmInventario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).EndInit();
