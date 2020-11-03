@@ -29,50 +29,9 @@ namespace VISTAMRP
 
         }
 
-        private void productoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmProducto usu = new frmProducto();
-            AddFormulario(usu);
-            
-        }
-
-        private void controlDeCalidadToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmControlCalidad usu = new frmControlCalidad();
-            AddFormulario(usu);
-        }
-
-        private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmEmpleadoh usu = new frmEmpleadoh();
-            AddFormulario(usu);
-
-        }
-
-        private void inventarioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmInventario usu = new frmInventario();
-            AddFormulario(usu);
-
-        }
-
         private void inventariadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmInve usu = new frmInve();
-            AddFormulario(usu);
-
-        }
-
-        private void materiaPrimaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmMateriaPrima usu = new frmMateriaPrima();
-            AddFormulario(usu);
-
-        }
-
-        private void ordenesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmOrdenes usu = new frmOrdenes();
             AddFormulario(usu);
 
         }
@@ -86,6 +45,43 @@ namespace VISTAMRP
 
         private void pnlPadre_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void controlDeCalidadToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmControlCalidad usu = new frmControlCalidad();
+            AddFormulario(usu);
+        }
+
+        private void empleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEmpleadoh usu = new frmEmpleadoh();
+            AddFormulario(usu);
+        }
+
+        private void materiaPrimaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmMateriaPrima usu = new frmMateriaPrima();
+            AddFormulario(usu);
+        }
+
+        private void ordenesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmOrdenes usu = new frmOrdenes();
+            AddFormulario(usu);
+        }
+
+        private void productoToolStripMenuItem1_Click_1(object sender, EventArgs e)
+        {
+            frmProducto usu = new frmProducto();
+            AddFormulario(usu);
+        }
+
+        private void inventariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmInventario usu = new frmInventario();
+            AddFormulario(usu);
 
         }
     }
