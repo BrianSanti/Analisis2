@@ -34,6 +34,10 @@
     <Reference Include="CapaVistaNavegador">
       <HintPath>..\..\..\Navegador-main\Navegador\Navegador\CapaVista\bin\Debug\CapaVistaNavegador.dll</HintPath>
     </Reference>
+    <Reference Include="CapaVistaSeguridad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.dll</HintPath>
+    </Reference>
     <Reference Include="CONTROLADORMRP">
       <HintPath>..\CONTROLADORMRP\bin\Debug\CONTROLADORMRP.dll</HintPath>
     </Reference>
@@ -91,18 +95,17 @@
     <Compile Include="frmInventario.Designer.cs">
       <DependentUpon>frmInventario.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMDI.Designer.cs">
+      <DependentUpon>frmMDI.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmOrdenes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmOrdenes.Designer.cs">
       <DependentUpon>frmOrdenes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include=".Designer.cs">
-      <DependentUpon>frmPrincipal.cs</DependentUpon>
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmProduccion.cs">
       <SubType>Form</SubType>
@@ -157,11 +160,11 @@
     <EmbeddedResource Include="frmInventario.resx">
       <DependentUpon>frmInventario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMDI.resx">
+      <DependentUpon>frmMDI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmOrdenes.resx">
       <DependentUpon>frmOrdenes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPrincipal.resx">
-      <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmProduccion.resx">
       <DependentUpon>frmProduccion.cs</DependentUpon>

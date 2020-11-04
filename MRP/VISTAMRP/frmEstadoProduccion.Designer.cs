@@ -28,159 +28,194 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new CapaVistaNavegador.Navegador();
-            this.gpbEstadoP = new System.Windows.Forms.GroupBox();
-            this.txtCodgio = new System.Windows.Forms.TextBox();
             this.lblCodigo = new System.Windows.Forms.Label();
-            this.txtEstado = new System.Windows.Forms.TextBox();
-            this.txtDuracion = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.lblEstado = new System.Windows.Forms.Label();
             this.lblDuracion = new System.Windows.Forms.Label();
+            this.gbxEstado = new System.Windows.Forms.GroupBox();
+            this.rbtnDesabilitado = new System.Windows.Forms.RadioButton();
+            this.rbtnHabilitado = new System.Windows.Forms.RadioButton();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtDuracion = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.navegador1 = new CapaVistaNavegador.Navegador();
             this.dgvEstadoP = new System.Windows.Forms.DataGridView();
-            this.gpbEstadoP.SuspendLayout();
+            this.gbxEstado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstadoP)).BeginInit();
             this.SuspendLayout();
-            // 
-            // navegador1
-            // 
-            this.navegador1.BackColor = System.Drawing.Color.Transparent;
-            this.navegador1.Location = new System.Drawing.Point(13, 13);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1412, 129);
-            this.navegador1.TabIndex = 0;
-            // 
-            // gpbEstadoP
-            // 
-            this.gpbEstadoP.Controls.Add(this.txtCodgio);
-            this.gpbEstadoP.Controls.Add(this.lblCodigo);
-            this.gpbEstadoP.Controls.Add(this.txtEstado);
-            this.gpbEstadoP.Controls.Add(this.txtDuracion);
-            this.gpbEstadoP.Controls.Add(this.txtNombre);
-            this.gpbEstadoP.Controls.Add(this.lblNombre);
-            this.gpbEstadoP.Controls.Add(this.lblEstado);
-            this.gpbEstadoP.Controls.Add(this.lblDuracion);
-            this.gpbEstadoP.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpbEstadoP.Location = new System.Drawing.Point(46, 172);
-            this.gpbEstadoP.Name = "gpbEstadoP";
-            this.gpbEstadoP.Size = new System.Drawing.Size(514, 250);
-            this.gpbEstadoP.TabIndex = 9;
-            this.gpbEstadoP.TabStop = false;
-            this.gpbEstadoP.Text = "Estado Produccion";
-            // 
-            // txtCodgio
-            // 
-            this.txtCodgio.Location = new System.Drawing.Point(199, 53);
-            this.txtCodgio.Name = "txtCodgio";
-            this.txtCodgio.Size = new System.Drawing.Size(276, 31);
-            this.txtCodgio.TabIndex = 14;
             // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.BackColor = System.Drawing.Color.Transparent;
             this.lblCodigo.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.Location = new System.Drawing.Point(32, 58);
+            this.lblCodigo.Location = new System.Drawing.Point(82, 151);
+            this.lblCodigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(124, 20);
+            this.lblCodigo.Size = new System.Drawing.Size(57, 17);
             this.lblCodigo.TabIndex = 13;
-            this.lblCodigo.Text = "Codigo Estado";
-            // 
-            // txtEstado
-            // 
-            this.txtEstado.Location = new System.Drawing.Point(199, 185);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(276, 31);
-            this.txtEstado.TabIndex = 11;
-            // 
-            // txtDuracion
-            // 
-            this.txtDuracion.Location = new System.Drawing.Point(199, 140);
-            this.txtDuracion.Name = "txtDuracion";
-            this.txtDuracion.Size = new System.Drawing.Size(276, 31);
-            this.txtDuracion.TabIndex = 10;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(199, 97);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(276, 31);
-            this.txtNombre.TabIndex = 9;
+            this.lblCodigo.Text = "Código";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(32, 102);
+            this.lblNombre.Location = new System.Drawing.Point(31, 188);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(130, 20);
+            this.lblNombre.Size = new System.Drawing.Size(108, 17);
             this.lblNombre.TabIndex = 5;
             this.lblNombre.Text = "Nombre Estado";
-            // 
-            // lblEstado
-            // 
-            this.lblEstado.AutoSize = true;
-            this.lblEstado.BackColor = System.Drawing.Color.Transparent;
-            this.lblEstado.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstado.Location = new System.Drawing.Point(32, 190);
-            this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(62, 20);
-            this.lblEstado.TabIndex = 7;
-            this.lblEstado.Text = "Estado";
             // 
             // lblDuracion
             // 
             this.lblDuracion.AutoSize = true;
             this.lblDuracion.BackColor = System.Drawing.Color.Transparent;
             this.lblDuracion.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDuracion.Location = new System.Drawing.Point(32, 145);
+            this.lblDuracion.Location = new System.Drawing.Point(73, 222);
+            this.lblDuracion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDuracion.Name = "lblDuracion";
-            this.lblDuracion.Size = new System.Drawing.Size(81, 20);
+            this.lblDuracion.Size = new System.Drawing.Size(66, 17);
             this.lblDuracion.TabIndex = 6;
-            this.lblDuracion.Text = "Duracion";
+            this.lblDuracion.Text = "Duración";
+            // 
+            // gbxEstado
+            // 
+            this.gbxEstado.Controls.Add(this.rbtnDesabilitado);
+            this.gbxEstado.Controls.Add(this.rbtnHabilitado);
+            this.gbxEstado.Font = new System.Drawing.Font("Rockwell", 9.75F);
+            this.gbxEstado.Location = new System.Drawing.Point(110, 279);
+            this.gbxEstado.Margin = new System.Windows.Forms.Padding(4);
+            this.gbxEstado.Name = "gbxEstado";
+            this.gbxEstado.Padding = new System.Windows.Forms.Padding(4);
+            this.gbxEstado.Size = new System.Drawing.Size(307, 71);
+            this.gbxEstado.TabIndex = 29;
+            this.gbxEstado.TabStop = false;
+            this.gbxEstado.Text = "Estado";
+            // 
+            // rbtnDesabilitado
+            // 
+            this.rbtnDesabilitado.AutoSize = true;
+            this.rbtnDesabilitado.Location = new System.Drawing.Point(164, 27);
+            this.rbtnDesabilitado.Margin = new System.Windows.Forms.Padding(4);
+            this.rbtnDesabilitado.Name = "rbtnDesabilitado";
+            this.rbtnDesabilitado.Size = new System.Drawing.Size(105, 20);
+            this.rbtnDesabilitado.TabIndex = 6;
+            this.rbtnDesabilitado.TabStop = true;
+            this.rbtnDesabilitado.Text = "Deshabilitado";
+            this.rbtnDesabilitado.UseVisualStyleBackColor = true;
+            this.rbtnDesabilitado.CheckedChanged += new System.EventHandler(this.rbtnDesabilitado_CheckedChanged);
+            // 
+            // rbtnHabilitado
+            // 
+            this.rbtnHabilitado.AutoSize = true;
+            this.rbtnHabilitado.Location = new System.Drawing.Point(24, 27);
+            this.rbtnHabilitado.Margin = new System.Windows.Forms.Padding(4);
+            this.rbtnHabilitado.Name = "rbtnHabilitado";
+            this.rbtnHabilitado.Size = new System.Drawing.Size(85, 20);
+            this.rbtnHabilitado.TabIndex = 5;
+            this.rbtnHabilitado.TabStop = true;
+            this.rbtnHabilitado.Text = "Habilitado";
+            this.rbtnHabilitado.UseVisualStyleBackColor = true;
+            this.rbtnHabilitado.CheckedChanged += new System.EventHandler(this.rbtnHabilitado_CheckedChanged);
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Location = new System.Drawing.Point(180, 151);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigo.TabIndex = 35;
+            this.txtCodigo.Tag = "pk_id_estado_produccion";
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(180, 188);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(199, 20);
+            this.txtNombre.TabIndex = 36;
+            this.txtNombre.Tag = "nombre_estado_produccion";
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
+            // 
+            // txtDuracion
+            // 
+            this.txtDuracion.Location = new System.Drawing.Point(180, 222);
+            this.txtDuracion.Name = "txtDuracion";
+            this.txtDuracion.Size = new System.Drawing.Size(199, 20);
+            this.txtDuracion.TabIndex = 37;
+            this.txtDuracion.Tag = "duracion_estado_produccion";
+            // 
+            // txtEstado
+            // 
+            this.txtEstado.Enabled = false;
+            this.txtEstado.Location = new System.Drawing.Point(34, 279);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(52, 20);
+            this.txtEstado.TabIndex = 38;
+            this.txtEstado.Tag = "estado_estado_produccion";
+            this.txtEstado.Visible = false;
+            this.txtEstado.TextChanged += new System.EventHandler(this.txtEstado_TextChanged);
+            // 
+            // navegador1
+            // 
+            this.navegador1.BackColor = System.Drawing.Color.Transparent;
+            this.navegador1.Location = new System.Drawing.Point(0, 11);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(1059, 105);
+            this.navegador1.TabIndex = 39;
+            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
             // 
             // dgvEstadoP
             // 
+            this.dgvEstadoP.AllowUserToOrderColumns = true;
             this.dgvEstadoP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEstadoP.Location = new System.Drawing.Point(613, 149);
+            this.dgvEstadoP.Location = new System.Drawing.Point(458, 122);
             this.dgvEstadoP.Name = "dgvEstadoP";
-            this.dgvEstadoP.RowHeadersWidth = 51;
-            this.dgvEstadoP.RowTemplate.Height = 24;
-            this.dgvEstadoP.Size = new System.Drawing.Size(799, 327);
-            this.dgvEstadoP.TabIndex = 10;
+            this.dgvEstadoP.ReadOnly = true;
+            this.dgvEstadoP.Size = new System.Drawing.Size(589, 256);
+            this.dgvEstadoP.TabIndex = 40;
             // 
             // frmEstadoProduccion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1442, 503);
+            this.BackColor = System.Drawing.Color.PowderBlue;
+            this.ClientSize = new System.Drawing.Size(1090, 409);
             this.Controls.Add(this.dgvEstadoP);
-            this.Controls.Add(this.gpbEstadoP);
             this.Controls.Add(this.navegador1);
+            this.Controls.Add(this.txtEstado);
+            this.Controls.Add(this.txtDuracion);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtCodigo);
+            this.Controls.Add(this.lblCodigo);
+            this.Controls.Add(this.gbxEstado);
+            this.Controls.Add(this.lblNombre);
+            this.Controls.Add(this.lblDuracion);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "frmEstadoProduccion";
-            this.Text = "frmEstadoProduccion";
-            this.gpbEstadoP.ResumeLayout(false);
-            this.gpbEstadoP.PerformLayout();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "3304 - Estados de Producción";
+            this.gbxEstado.ResumeLayout(false);
+            this.gbxEstado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstadoP)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private CapaVistaNavegador.Navegador navegador1;
-        private System.Windows.Forms.GroupBox gpbEstadoP;
-        private System.Windows.Forms.TextBox txtCodgio;
         private System.Windows.Forms.Label lblCodigo;
-        private System.Windows.Forms.TextBox txtEstado;
-        private System.Windows.Forms.TextBox txtDuracion;
-        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.Label lblEstado;
         private System.Windows.Forms.Label lblDuracion;
+        private System.Windows.Forms.GroupBox gbxEstado;
+        private System.Windows.Forms.RadioButton rbtnDesabilitado;
+        private System.Windows.Forms.RadioButton rbtnHabilitado;
+        private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtDuracion;
+        private System.Windows.Forms.TextBox txtEstado;
+        private CapaVistaNavegador.Navegador navegador1;
         private System.Windows.Forms.DataGridView dgvEstadoP;
     }
 }

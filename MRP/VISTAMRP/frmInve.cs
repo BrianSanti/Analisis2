@@ -13,7 +13,7 @@ namespace VISTAMRP
 {
     public partial class frmInve : Form
     {
-        VALIDACIONES va = new VALIDACIONES();
+        clsValidaciones va = new clsValidaciones();
         public frmInve()
         {
             InitializeComponent();

@@ -28,41 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new CapaVistaNavegador.Navegador();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.lblPrecio = new System.Windows.Forms.Label();
-            this.gpbActivos = new System.Windows.Forms.GroupBox();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.lblCodigo = new System.Windows.Forms.Label();
-            this.txtEstado = new System.Windows.Forms.TextBox();
-            this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.lblEstado = new System.Windows.Forms.Label();
             this.dgvActivos = new System.Windows.Forms.DataGridView();
-            this.gpbActivos.SuspendLayout();
+            this.gbxEstado = new System.Windows.Forms.GroupBox();
+            this.rbtnDesabilitado = new System.Windows.Forms.RadioButton();
+            this.rbtnHabilitado = new System.Windows.Forms.RadioButton();
+            this.navegador1 = new CapaVistaNavegador.Navegador();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvActivos)).BeginInit();
+            this.gbxEstado.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // navegador1
-            // 
-            this.navegador1.BackColor = System.Drawing.Color.Transparent;
-            this.navegador1.Location = new System.Drawing.Point(13, 13);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1412, 129);
-            this.navegador1.TabIndex = 0;
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(32, 102);
+            this.lblNombre.Location = new System.Drawing.Point(31, 179);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(135, 20);
+            this.lblNombre.Size = new System.Drawing.Size(112, 17);
             this.lblNombre.TabIndex = 5;
+            this.lblNombre.Tag = "pk_id_activos_mrp";
             this.lblNombre.Text = "Nombre Activos";
             // 
             // lblDescripcion
@@ -70,9 +64,10 @@
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.BackColor = System.Drawing.Color.Transparent;
             this.lblDescripcion.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.Location = new System.Drawing.Point(32, 145);
+            this.lblDescripcion.Location = new System.Drawing.Point(31, 214);
+            this.lblDescripcion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(104, 20);
+            this.lblDescripcion.Size = new System.Drawing.Size(85, 17);
             this.lblDescripcion.TabIndex = 6;
             this.lblDescripcion.Text = "Descripcion";
             // 
@@ -81,130 +76,177 @@
             this.lblPrecio.AutoSize = true;
             this.lblPrecio.BackColor = System.Drawing.Color.Transparent;
             this.lblPrecio.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(32, 190);
+            this.lblPrecio.Location = new System.Drawing.Point(31, 250);
+            this.lblPrecio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(60, 20);
+            this.lblPrecio.Size = new System.Drawing.Size(49, 17);
             this.lblPrecio.TabIndex = 7;
             this.lblPrecio.Text = "Precio";
-            // 
-            // gpbActivos
-            // 
-            this.gpbActivos.Controls.Add(this.txtCodigo);
-            this.gpbActivos.Controls.Add(this.lblCodigo);
-            this.gpbActivos.Controls.Add(this.txtEstado);
-            this.gpbActivos.Controls.Add(this.txtPrecio);
-            this.gpbActivos.Controls.Add(this.txtDescripcion);
-            this.gpbActivos.Controls.Add(this.txtNombre);
-            this.gpbActivos.Controls.Add(this.lblEstado);
-            this.gpbActivos.Controls.Add(this.lblNombre);
-            this.gpbActivos.Controls.Add(this.lblPrecio);
-            this.gpbActivos.Controls.Add(this.lblDescripcion);
-            this.gpbActivos.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpbActivos.Location = new System.Drawing.Point(39, 149);
-            this.gpbActivos.Name = "gpbActivos";
-            this.gpbActivos.Size = new System.Drawing.Size(514, 303);
-            this.gpbActivos.TabIndex = 8;
-            this.gpbActivos.TabStop = false;
-            this.gpbActivos.Text = "Activos";
-            // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Location = new System.Drawing.Point(199, 53);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(276, 31);
-            this.txtCodigo.TabIndex = 14;
             // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.BackColor = System.Drawing.Color.Transparent;
             this.lblCodigo.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.Location = new System.Drawing.Point(32, 58);
+            this.lblCodigo.Location = new System.Drawing.Point(31, 143);
+            this.lblCodigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(121, 20);
+            this.lblCodigo.Size = new System.Drawing.Size(102, 17);
             this.lblCodigo.TabIndex = 13;
             this.lblCodigo.Text = "Codigo Activo";
             // 
-            // txtEstado
+            // dgvActivos
             // 
-            this.txtEstado.Location = new System.Drawing.Point(199, 231);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(276, 31);
-            this.txtEstado.TabIndex = 12;
+            this.dgvActivos.AllowUserToOrderColumns = true;
+            this.dgvActivos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvActivos.Location = new System.Drawing.Point(453, 119);
+            this.dgvActivos.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvActivos.Name = "dgvActivos";
+            this.dgvActivos.ReadOnly = true;
+            this.dgvActivos.RowHeadersWidth = 51;
+            this.dgvActivos.RowTemplate.Height = 24;
+            this.dgvActivos.Size = new System.Drawing.Size(603, 266);
+            this.dgvActivos.TabIndex = 9;
             // 
-            // txtPrecio
+            // gbxEstado
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(199, 185);
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(276, 31);
-            this.txtPrecio.TabIndex = 11;
+            this.gbxEstado.Controls.Add(this.rbtnDesabilitado);
+            this.gbxEstado.Controls.Add(this.rbtnHabilitado);
+            this.gbxEstado.Font = new System.Drawing.Font("Rockwell", 9.75F);
+            this.gbxEstado.Location = new System.Drawing.Point(107, 296);
+            this.gbxEstado.Margin = new System.Windows.Forms.Padding(4);
+            this.gbxEstado.Name = "gbxEstado";
+            this.gbxEstado.Padding = new System.Windows.Forms.Padding(4);
+            this.gbxEstado.Size = new System.Drawing.Size(307, 71);
+            this.gbxEstado.TabIndex = 13;
+            this.gbxEstado.TabStop = false;
+            this.gbxEstado.Text = "Estado";
             // 
-            // txtDescripcion
+            // rbtnDesabilitado
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(199, 140);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(276, 31);
-            this.txtDescripcion.TabIndex = 10;
+            this.rbtnDesabilitado.AutoSize = true;
+            this.rbtnDesabilitado.Location = new System.Drawing.Point(164, 27);
+            this.rbtnDesabilitado.Margin = new System.Windows.Forms.Padding(4);
+            this.rbtnDesabilitado.Name = "rbtnDesabilitado";
+            this.rbtnDesabilitado.Size = new System.Drawing.Size(105, 20);
+            this.rbtnDesabilitado.TabIndex = 7;
+            this.rbtnDesabilitado.TabStop = true;
+            this.rbtnDesabilitado.Text = "Deshabilitado";
+            this.rbtnDesabilitado.UseVisualStyleBackColor = true;
+            this.rbtnDesabilitado.CheckedChanged += new System.EventHandler(this.rbtnDesabilitado_CheckedChanged);
+            // 
+            // rbtnHabilitado
+            // 
+            this.rbtnHabilitado.AutoSize = true;
+            this.rbtnHabilitado.Location = new System.Drawing.Point(24, 27);
+            this.rbtnHabilitado.Margin = new System.Windows.Forms.Padding(4);
+            this.rbtnHabilitado.Name = "rbtnHabilitado";
+            this.rbtnHabilitado.Size = new System.Drawing.Size(85, 20);
+            this.rbtnHabilitado.TabIndex = 6;
+            this.rbtnHabilitado.TabStop = true;
+            this.rbtnHabilitado.Text = "Habilitado";
+            this.rbtnHabilitado.UseVisualStyleBackColor = true;
+            this.rbtnHabilitado.CheckedChanged += new System.EventHandler(this.rbtnHabilitado_CheckedChanged);
+            // 
+            // navegador1
+            // 
+            this.navegador1.BackColor = System.Drawing.Color.Transparent;
+            this.navegador1.Location = new System.Drawing.Point(12, 9);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(1059, 105);
+            this.navegador1.TabIndex = 14;
+            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Location = new System.Drawing.Point(176, 143);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(96, 20);
+            this.txtCodigo.TabIndex = 15;
+            this.txtCodigo.Tag = "pk_id_activos_mrp";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(199, 97);
+            this.txtNombre.Location = new System.Drawing.Point(176, 179);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(276, 31);
-            this.txtNombre.TabIndex = 9;
+            this.txtNombre.Size = new System.Drawing.Size(200, 20);
+            this.txtNombre.TabIndex = 16;
+            this.txtNombre.Tag = "nombre_activos_mrp";
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
-            // lblEstado
+            // txtDescripcion
             // 
-            this.lblEstado.AutoSize = true;
-            this.lblEstado.BackColor = System.Drawing.Color.Transparent;
-            this.lblEstado.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstado.Location = new System.Drawing.Point(32, 236);
-            this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(62, 20);
-            this.lblEstado.TabIndex = 8;
-            this.lblEstado.Text = "Estado";
+            this.txtDescripcion.Location = new System.Drawing.Point(176, 214);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(200, 20);
+            this.txtDescripcion.TabIndex = 17;
+            this.txtDescripcion.Tag = "descripcion_activos_mrp";
             // 
-            // dgvActivos
+            // txtPrecio
             // 
-            this.dgvActivos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvActivos.Location = new System.Drawing.Point(604, 146);
-            this.dgvActivos.Name = "dgvActivos";
-            this.dgvActivos.RowHeadersWidth = 51;
-            this.dgvActivos.RowTemplate.Height = 24;
-            this.dgvActivos.Size = new System.Drawing.Size(804, 328);
-            this.dgvActivos.TabIndex = 9;
+            this.txtPrecio.Location = new System.Drawing.Point(176, 250);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(200, 20);
+            this.txtPrecio.TabIndex = 18;
+            this.txtPrecio.Tag = "precio_activos_mrp";
+            this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecio_KeyPress);
+            // 
+            // txtEstado
+            // 
+            this.txtEstado.Enabled = false;
+            this.txtEstado.Location = new System.Drawing.Point(28, 296);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(52, 20);
+            this.txtEstado.TabIndex = 19;
+            this.txtEstado.Tag = "estado_activos_mrp";
+            this.txtEstado.Visible = false;
+            this.txtEstado.TextChanged += new System.EventHandler(this.txtEstado_TextChanged);
             // 
             // frmActivos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1442, 503);
-            this.Controls.Add(this.dgvActivos);
-            this.Controls.Add(this.gpbActivos);
+            this.BackColor = System.Drawing.Color.PowderBlue;
+            this.ClientSize = new System.Drawing.Size(1074, 401);
+            this.Controls.Add(this.txtEstado);
+            this.Controls.Add(this.txtPrecio);
+            this.Controls.Add(this.txtDescripcion);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.navegador1);
+            this.Controls.Add(this.lblCodigo);
+            this.Controls.Add(this.gbxEstado);
+            this.Controls.Add(this.dgvActivos);
+            this.Controls.Add(this.lblNombre);
+            this.Controls.Add(this.lblPrecio);
+            this.Controls.Add(this.lblDescripcion);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "frmActivos";
-            this.Text = "frmActivos";
-            this.gpbActivos.ResumeLayout(false);
-            this.gpbActivos.PerformLayout();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "3302 - Productos";
             ((System.ComponentModel.ISupportInitialize)(this.dgvActivos)).EndInit();
+            this.gbxEstado.ResumeLayout(false);
+            this.gbxEstado.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private CapaVistaNavegador.Navegador navegador1;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.Label lblPrecio;
-        private System.Windows.Forms.GroupBox gpbActivos;
-        private System.Windows.Forms.TextBox txtEstado;
-        private System.Windows.Forms.TextBox txtPrecio;
-        private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label lblEstado;
         private System.Windows.Forms.DataGridView dgvActivos;
-        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label lblCodigo;
+        private System.Windows.Forms.GroupBox gbxEstado;
+        private System.Windows.Forms.RadioButton rbtnDesabilitado;
+        private System.Windows.Forms.RadioButton rbtnHabilitado;
+        private CapaVistaNavegador.Navegador navegador1;
+        private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.TextBox txtEstado;
     }
 }

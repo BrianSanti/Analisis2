@@ -13,7 +13,7 @@ namespace VISTAMRP
 {
     public partial class frmControlCalidad : Form
     {
-        VALIDACIONES va = new VALIDACIONES();
+        clsValidaciones va = new clsValidaciones();
         
         public frmControlCalidad()
         {

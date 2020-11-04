@@ -13,7 +13,7 @@ namespace VISTAMRP
 {
     public partial class frmOrdenes : Form
     {
-        VALIDACIONES va = new VALIDACIONES();
+        clsValidaciones va = new clsValidaciones();
         public frmOrdenes()
         {
             InitializeComponent();

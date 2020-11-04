@@ -28,159 +28,198 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new CapaVistaNavegador.Navegador();
-            this.gpbTInventarios = new System.Windows.Forms.GroupBox();
-            this.txtEstado = new System.Windows.Forms.TextBox();
-            this.lblEstado = new System.Windows.Forms.Label();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.lblDescripcion = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.dgvTipoInventarios = new System.Windows.Forms.DataGridView();
-            this.gpbTInventarios.SuspendLayout();
+            this.gbxEstado = new System.Windows.Forms.GroupBox();
+            this.rbtnDesabilitado = new System.Windows.Forms.RadioButton();
+            this.rbtnHabilitado = new System.Windows.Forms.RadioButton();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.navegador1 = new CapaVistaNavegador.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTipoInventarios)).BeginInit();
+            this.gbxEstado.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // navegador1
-            // 
-            this.navegador1.BackColor = System.Drawing.Color.Transparent;
-            this.navegador1.Location = new System.Drawing.Point(13, 13);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1412, 129);
-            this.navegador1.TabIndex = 0;
-            // 
-            // gpbTInventarios
-            // 
-            this.gpbTInventarios.Controls.Add(this.txtEstado);
-            this.gpbTInventarios.Controls.Add(this.lblEstado);
-            this.gpbTInventarios.Controls.Add(this.txtDescripcion);
-            this.gpbTInventarios.Controls.Add(this.lblDescripcion);
-            this.gpbTInventarios.Controls.Add(this.txtNombre);
-            this.gpbTInventarios.Controls.Add(this.lblNombre);
-            this.gpbTInventarios.Controls.Add(this.txtCodigo);
-            this.gpbTInventarios.Controls.Add(this.lblCodigo);
-            this.gpbTInventarios.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpbTInventarios.Location = new System.Drawing.Point(53, 139);
-            this.gpbTInventarios.Name = "gpbTInventarios";
-            this.gpbTInventarios.Size = new System.Drawing.Size(515, 350);
-            this.gpbTInventarios.TabIndex = 1;
-            this.gpbTInventarios.TabStop = false;
-            this.gpbTInventarios.Text = "Tipo de Inventarios";
-            // 
-            // txtEstado
-            // 
-            this.txtEstado.Location = new System.Drawing.Point(220, 233);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(276, 31);
-            this.txtEstado.TabIndex = 27;
-            // 
-            // lblEstado
-            // 
-            this.lblEstado.AutoSize = true;
-            this.lblEstado.BackColor = System.Drawing.Color.Transparent;
-            this.lblEstado.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstado.Location = new System.Drawing.Point(19, 236);
-            this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(73, 22);
-            this.lblEstado.TabIndex = 26;
-            this.lblEstado.Text = "Estado";
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.Location = new System.Drawing.Point(221, 183);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(276, 31);
-            this.txtDescripcion.TabIndex = 25;
             // 
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.BackColor = System.Drawing.Color.Transparent;
-            this.lblDescripcion.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.Location = new System.Drawing.Point(20, 186);
+            this.lblDescripcion.Font = new System.Drawing.Font("Rockwell", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcion.Location = new System.Drawing.Point(14, 206);
+            this.lblDescripcion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(120, 22);
+            this.lblDescripcion.Size = new System.Drawing.Size(94, 17);
             this.lblDescripcion.TabIndex = 24;
-            this.lblDescripcion.Text = "Descripcion";
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(220, 126);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(276, 31);
-            this.txtNombre.TabIndex = 23;
+            this.lblDescripcion.Text = "Descripción";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
-            this.lblNombre.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(19, 129);
+            this.lblNombre.Font = new System.Drawing.Font("Rockwell", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(42, 172);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(84, 22);
+            this.lblNombre.Size = new System.Drawing.Size(66, 17);
             this.lblNombre.TabIndex = 22;
             this.lblNombre.Text = "Nombre";
-            // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Location = new System.Drawing.Point(220, 78);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(276, 31);
-            this.txtCodigo.TabIndex = 21;
             // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.BackColor = System.Drawing.Color.Transparent;
-            this.lblCodigo.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.Location = new System.Drawing.Point(19, 81);
+            this.lblCodigo.Font = new System.Drawing.Font("Rockwell", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigo.Location = new System.Drawing.Point(48, 133);
+            this.lblCodigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(79, 22);
+            this.lblCodigo.Size = new System.Drawing.Size(60, 17);
             this.lblCodigo.TabIndex = 20;
-            this.lblCodigo.Text = "Codigo";
+            this.lblCodigo.Text = "Código";
             // 
             // dgvTipoInventarios
             // 
+            this.dgvTipoInventarios.AllowUserToOrderColumns = true;
             this.dgvTipoInventarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTipoInventarios.Location = new System.Drawing.Point(592, 139);
+            this.dgvTipoInventarios.Location = new System.Drawing.Point(444, 113);
+            this.dgvTipoInventarios.Margin = new System.Windows.Forms.Padding(2);
             this.dgvTipoInventarios.Name = "dgvTipoInventarios";
+            this.dgvTipoInventarios.ReadOnly = true;
             this.dgvTipoInventarios.RowHeadersWidth = 51;
             this.dgvTipoInventarios.RowTemplate.Height = 24;
-            this.dgvTipoInventarios.Size = new System.Drawing.Size(808, 326);
+            this.dgvTipoInventarios.Size = new System.Drawing.Size(606, 265);
             this.dgvTipoInventarios.TabIndex = 2;
+            // 
+            // gbxEstado
+            // 
+            this.gbxEstado.Controls.Add(this.rbtnDesabilitado);
+            this.gbxEstado.Controls.Add(this.rbtnHabilitado);
+            this.gbxEstado.Font = new System.Drawing.Font("Rockwell", 9.75F);
+            this.gbxEstado.Location = new System.Drawing.Point(107, 287);
+            this.gbxEstado.Margin = new System.Windows.Forms.Padding(4);
+            this.gbxEstado.Name = "gbxEstado";
+            this.gbxEstado.Padding = new System.Windows.Forms.Padding(4);
+            this.gbxEstado.Size = new System.Drawing.Size(307, 71);
+            this.gbxEstado.TabIndex = 28;
+            this.gbxEstado.TabStop = false;
+            this.gbxEstado.Text = "Estado";
+            // 
+            // rbtnDesabilitado
+            // 
+            this.rbtnDesabilitado.AutoSize = true;
+            this.rbtnDesabilitado.Location = new System.Drawing.Point(164, 27);
+            this.rbtnDesabilitado.Margin = new System.Windows.Forms.Padding(4);
+            this.rbtnDesabilitado.Name = "rbtnDesabilitado";
+            this.rbtnDesabilitado.Size = new System.Drawing.Size(105, 20);
+            this.rbtnDesabilitado.TabIndex = 6;
+            this.rbtnDesabilitado.TabStop = true;
+            this.rbtnDesabilitado.Text = "Deshabilitado";
+            this.rbtnDesabilitado.UseVisualStyleBackColor = true;
+            this.rbtnDesabilitado.CheckedChanged += new System.EventHandler(this.rbtnDesabilitado_CheckedChanged);
+            // 
+            // rbtnHabilitado
+            // 
+            this.rbtnHabilitado.AutoSize = true;
+            this.rbtnHabilitado.Location = new System.Drawing.Point(24, 27);
+            this.rbtnHabilitado.Margin = new System.Windows.Forms.Padding(4);
+            this.rbtnHabilitado.Name = "rbtnHabilitado";
+            this.rbtnHabilitado.Size = new System.Drawing.Size(85, 20);
+            this.rbtnHabilitado.TabIndex = 5;
+            this.rbtnHabilitado.TabStop = true;
+            this.rbtnHabilitado.Text = "Habilitado";
+            this.rbtnHabilitado.UseVisualStyleBackColor = true;
+            this.rbtnHabilitado.CheckedChanged += new System.EventHandler(this.rbtnHabilitado_CheckedChanged);
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Location = new System.Drawing.Point(162, 133);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigo.TabIndex = 29;
+            this.txtCodigo.Tag = "pk_id_tipo_inventario";
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(162, 172);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(214, 20);
+            this.txtNombre.TabIndex = 30;
+            this.txtNombre.Tag = "nombre_tipo_inventario";
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
+            // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.Location = new System.Drawing.Point(162, 206);
+            this.txtDescripcion.Multiline = true;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(214, 74);
+            this.txtDescripcion.TabIndex = 31;
+            this.txtDescripcion.Tag = "descripcion_tipo_inventario";
+            // 
+            // txtEstado
+            // 
+            this.txtEstado.Enabled = false;
+            this.txtEstado.Location = new System.Drawing.Point(29, 287);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(52, 20);
+            this.txtEstado.TabIndex = 32;
+            this.txtEstado.Tag = "estado_tipo_inventario";
+            this.txtEstado.Visible = false;
+            this.txtEstado.TextChanged += new System.EventHandler(this.txtEstado_TextChanged);
+            // 
+            // navegador1
+            // 
+            this.navegador1.BackColor = System.Drawing.Color.Transparent;
+            this.navegador1.Location = new System.Drawing.Point(8, 3);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(1059, 105);
+            this.navegador1.TabIndex = 33;
+            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
             // 
             // frmTipoInventario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1442, 503);
-            this.Controls.Add(this.dgvTipoInventarios);
-            this.Controls.Add(this.gpbTInventarios);
+            this.BackColor = System.Drawing.Color.PowderBlue;
+            this.ClientSize = new System.Drawing.Size(1079, 401);
             this.Controls.Add(this.navegador1);
+            this.Controls.Add(this.txtEstado);
+            this.Controls.Add(this.txtDescripcion);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtCodigo);
+            this.Controls.Add(this.gbxEstado);
+            this.Controls.Add(this.lblDescripcion);
+            this.Controls.Add(this.dgvTipoInventarios);
+            this.Controls.Add(this.lblNombre);
+            this.Controls.Add(this.lblCodigo);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "frmTipoInventario";
-            this.Text = "frmTipoInventario";
-            this.gpbTInventarios.ResumeLayout(false);
-            this.gpbTInventarios.PerformLayout();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "3303 -Tipos de Inventarios";
             ((System.ComponentModel.ISupportInitialize)(this.dgvTipoInventarios)).EndInit();
+            this.gbxEstado.ResumeLayout(false);
+            this.gbxEstado.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private CapaVistaNavegador.Navegador navegador1;
-        private System.Windows.Forms.GroupBox gpbTInventarios;
-        private System.Windows.Forms.TextBox txtEstado;
-        private System.Windows.Forms.Label lblEstado;
-        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label lblDescripcion;
-        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.DataGridView dgvTipoInventarios;
+        private System.Windows.Forms.GroupBox gbxEstado;
+        private System.Windows.Forms.RadioButton rbtnDesabilitado;
+        private System.Windows.Forms.RadioButton rbtnHabilitado;
+        private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.TextBox txtEstado;
+        private CapaVistaNavegador.Navegador navegador1;
     }
 }
