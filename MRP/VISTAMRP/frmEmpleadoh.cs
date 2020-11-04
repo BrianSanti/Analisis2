@@ -43,5 +43,10 @@ namespace VISTAMRP
         {
             va.CamposNumerosYLetras(e);
         }
+
+        private void navegador1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

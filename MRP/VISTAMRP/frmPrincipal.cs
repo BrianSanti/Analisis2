@@ -38,7 +38,7 @@ namespace VISTAMRP
 
         private void productoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            frmProducto usu = new frmProducto();
+            frmProduccion usu = new frmProduccion();
             AddFormulario(usu);
 
         }
@@ -62,8 +62,7 @@ namespace VISTAMRP
 
         private void materiaPrimaToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            frmMateriaPrima usu = new frmMateriaPrima();
-            AddFormulario(usu);
+          
         }
 
         private void ordenesToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -74,7 +73,7 @@ namespace VISTAMRP
 
         private void productoToolStripMenuItem1_Click_1(object sender, EventArgs e)
         {
-            frmProducto usu = new frmProducto();
+            frmProduccion usu = new frmProduccion();
             AddFormulario(usu);
         }
 

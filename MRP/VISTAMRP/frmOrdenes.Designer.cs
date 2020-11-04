@@ -28,117 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOrdenes));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblMp = new System.Windows.Forms.Label();
+            this.lblCodigo = new System.Windows.Forms.Label();
             this.lblCantidad = new System.Windows.Forms.Label();
-            this.lblFechaE = new System.Windows.Forms.Label();
-            this.lblOrdenesTitulo = new System.Windows.Forms.Label();
-            this.lblEncargado = new System.Windows.Forms.Label();
-            this.lblEstado = new System.Windows.Forms.Label();
-            this.txtFecha = new System.Windows.Forms.TextBox();
-            this.txtCantidad = new System.Windows.Forms.TextBox();
-            this.txtEstado = new System.Windows.Forms.TextBox();
-            this.cmbEncargado = new System.Windows.Forms.ComboBox();
+            this.lblfecha = new System.Windows.Forms.Label();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.dgvOrdenes = new System.Windows.Forms.DataGridView();
-            this.btnAyuda = new System.Windows.Forms.Button();
+            this.navegador1 = new CapaVistaNavegador.Navegador();
+            this.gpbOrdenes = new System.Windows.Forms.GroupBox();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.cmbMp = new System.Windows.Forms.ComboBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrdenes)).BeginInit();
+            this.gpbOrdenes.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // lblMp
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Location = new System.Drawing.Point(97, 24);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1100, 112);
-            this.panel1.TabIndex = 1;
+            this.lblMp.AutoSize = true;
+            this.lblMp.BackColor = System.Drawing.Color.Transparent;
+            this.lblMp.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMp.Location = new System.Drawing.Point(35, 135);
+            this.lblMp.Name = "lblMp";
+            this.lblMp.Size = new System.Drawing.Size(165, 22);
+            this.lblMp.TabIndex = 5;
+            this.lblMp.Text = "ID Materia Prima";
+            // 
+            // lblCodigo
+            // 
+            this.lblCodigo.AutoSize = true;
+            this.lblCodigo.BackColor = System.Drawing.Color.Transparent;
+            this.lblCodigo.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigo.Location = new System.Drawing.Point(35, 81);
+            this.lblCodigo.Name = "lblCodigo";
+            this.lblCodigo.Size = new System.Drawing.Size(79, 22);
+            this.lblCodigo.TabIndex = 4;
+            this.lblCodigo.Text = "Codigo";
             // 
             // lblCantidad
             // 
             this.lblCantidad.AutoSize = true;
             this.lblCantidad.BackColor = System.Drawing.Color.Transparent;
-            this.lblCantidad.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidad.Location = new System.Drawing.Point(54, 277);
+            this.lblCantidad.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidad.Location = new System.Drawing.Point(35, 239);
             this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(80, 20);
-            this.lblCantidad.TabIndex = 5;
+            this.lblCantidad.Size = new System.Drawing.Size(96, 22);
+            this.lblCantidad.TabIndex = 7;
             this.lblCantidad.Text = "Cantidad";
             // 
-            // lblFechaE
+            // lblfecha
             // 
-            this.lblFechaE.AutoSize = true;
-            this.lblFechaE.BackColor = System.Drawing.Color.Transparent;
-            this.lblFechaE.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaE.Location = new System.Drawing.Point(54, 223);
-            this.lblFechaE.Name = "lblFechaE";
-            this.lblFechaE.Size = new System.Drawing.Size(133, 20);
-            this.lblFechaE.TabIndex = 4;
-            this.lblFechaE.Text = "Fecha de Envio ";
+            this.lblfecha.AutoSize = true;
+            this.lblfecha.BackColor = System.Drawing.Color.Transparent;
+            this.lblfecha.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblfecha.Location = new System.Drawing.Point(35, 185);
+            this.lblfecha.Name = "lblfecha";
+            this.lblfecha.Size = new System.Drawing.Size(121, 22);
+            this.lblfecha.TabIndex = 6;
+            this.lblfecha.Text = "Fecha Envio";
             // 
-            // lblOrdenesTitulo
+            // txtCodigo
             // 
-            this.lblOrdenesTitulo.AutoSize = true;
-            this.lblOrdenesTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.lblOrdenesTitulo.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOrdenesTitulo.Location = new System.Drawing.Point(54, 156);
-            this.lblOrdenesTitulo.Name = "lblOrdenesTitulo";
-            this.lblOrdenesTitulo.Size = new System.Drawing.Size(89, 22);
-            this.lblOrdenesTitulo.TabIndex = 3;
-            this.lblOrdenesTitulo.Text = "Ordenes";
-            // 
-            // lblEncargado
-            // 
-            this.lblEncargado.AutoSize = true;
-            this.lblEncargado.BackColor = System.Drawing.Color.Transparent;
-            this.lblEncargado.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEncargado.Location = new System.Drawing.Point(54, 381);
-            this.lblEncargado.Name = "lblEncargado";
-            this.lblEncargado.Size = new System.Drawing.Size(94, 20);
-            this.lblEncargado.TabIndex = 7;
-            this.lblEncargado.Text = "Encargado";
-            // 
-            // lblEstado
-            // 
-            this.lblEstado.AutoSize = true;
-            this.lblEstado.BackColor = System.Drawing.Color.Transparent;
-            this.lblEstado.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstado.Location = new System.Drawing.Point(54, 327);
-            this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(154, 20);
-            this.lblEstado.TabIndex = 6;
-            this.lblEstado.Text = "Estado de Compra";
-            // 
-            // txtFecha
-            // 
-            this.txtFecha.Location = new System.Drawing.Point(274, 221);
-            this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(235, 22);
-            this.txtFecha.TabIndex = 12;
-            this.txtFecha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventFecha);
-            // 
-            // txtCantidad
-            // 
-            this.txtCantidad.Location = new System.Drawing.Point(274, 275);
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(235, 22);
-            this.txtCantidad.TabIndex = 13;
-            this.txtCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventCantidad);
-            // 
-            // txtEstado
-            // 
-            this.txtEstado.Location = new System.Drawing.Point(274, 327);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(235, 22);
-            this.txtEstado.TabIndex = 14;
-            this.txtEstado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventEstado);
-            // 
-            // cmbEncargado
-            // 
-            this.cmbEncargado.FormattingEnabled = true;
-            this.cmbEncargado.Location = new System.Drawing.Point(274, 383);
-            this.cmbEncargado.Name = "cmbEncargado";
-            this.cmbEncargado.Size = new System.Drawing.Size(234, 24);
-            this.cmbEncargado.TabIndex = 15;
-            this.cmbEncargado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventEncargado);
+            this.txtCodigo.Location = new System.Drawing.Point(255, 79);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(235, 35);
+            this.txtCodigo.TabIndex = 12;
+            this.txtCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventFecha);
             // 
             // dgvOrdenes
             // 
@@ -147,36 +104,86 @@
             this.dgvOrdenes.Name = "dgvOrdenes";
             this.dgvOrdenes.RowHeadersWidth = 51;
             this.dgvOrdenes.RowTemplate.Height = 24;
-            this.dgvOrdenes.Size = new System.Drawing.Size(650, 310);
+            this.dgvOrdenes.Size = new System.Drawing.Size(842, 310);
             this.dgvOrdenes.TabIndex = 16;
             // 
-            // btnAyuda
+            // navegador1
             // 
-            this.btnAyuda.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAyuda.Image = ((System.Drawing.Image)(resources.GetObject("btnAyuda.Image")));
-            this.btnAyuda.Location = new System.Drawing.Point(1226, 463);
-            this.btnAyuda.Name = "btnAyuda";
-            this.btnAyuda.Size = new System.Drawing.Size(54, 41);
-            this.btnAyuda.TabIndex = 17;
-            this.btnAyuda.UseVisualStyleBackColor = true;
+            this.navegador1.BackColor = System.Drawing.Color.Transparent;
+            this.navegador1.Location = new System.Drawing.Point(17, 13);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(1412, 129);
+            this.navegador1.TabIndex = 18;
+            // 
+            // gpbOrdenes
+            // 
+            this.gpbOrdenes.Controls.Add(this.dtpFecha);
+            this.gpbOrdenes.Controls.Add(this.cmbMp);
+            this.gpbOrdenes.Controls.Add(this.txtEstado);
+            this.gpbOrdenes.Controls.Add(this.lblEstado);
+            this.gpbOrdenes.Controls.Add(this.txtCantidad);
+            this.gpbOrdenes.Controls.Add(this.txtCodigo);
+            this.gpbOrdenes.Controls.Add(this.lblCantidad);
+            this.gpbOrdenes.Controls.Add(this.lblfecha);
+            this.gpbOrdenes.Controls.Add(this.lblMp);
+            this.gpbOrdenes.Controls.Add(this.lblCodigo);
+            this.gpbOrdenes.Font = new System.Drawing.Font("Rockwell", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpbOrdenes.Location = new System.Drawing.Point(19, 142);
+            this.gpbOrdenes.Name = "gpbOrdenes";
+            this.gpbOrdenes.Size = new System.Drawing.Size(528, 333);
+            this.gpbOrdenes.TabIndex = 19;
+            this.gpbOrdenes.TabStop = false;
+            this.gpbOrdenes.Text = "Ordenes ";
+            // 
+            // dtpFecha
+            // 
+            this.dtpFecha.Location = new System.Drawing.Point(255, 174);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(235, 35);
+            this.dtpFecha.TabIndex = 19;
+            // 
+            // cmbMp
+            // 
+            this.cmbMp.FormattingEnabled = true;
+            this.cmbMp.Location = new System.Drawing.Point(255, 127);
+            this.cmbMp.Name = "cmbMp";
+            this.cmbMp.Size = new System.Drawing.Size(235, 34);
+            this.cmbMp.TabIndex = 18;
+            // 
+            // txtEstado
+            // 
+            this.txtEstado.Location = new System.Drawing.Point(255, 283);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(235, 35);
+            this.txtEstado.TabIndex = 17;
+            // 
+            // lblEstado
+            // 
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.BackColor = System.Drawing.Color.Transparent;
+            this.lblEstado.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstado.Location = new System.Drawing.Point(35, 291);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(73, 22);
+            this.lblEstado.TabIndex = 16;
+            this.lblEstado.Text = "Estado";
+            // 
+            // txtCantidad
+            // 
+            this.txtCantidad.Location = new System.Drawing.Point(255, 231);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(235, 35);
+            this.txtCantidad.TabIndex = 15;
             // 
             // frmOrdenes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1282, 503);
-            this.Controls.Add(this.btnAyuda);
+            this.ClientSize = new System.Drawing.Size(1442, 503);
+            this.Controls.Add(this.gpbOrdenes);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.dgvOrdenes);
-            this.Controls.Add(this.cmbEncargado);
-            this.Controls.Add(this.txtEstado);
-            this.Controls.Add(this.txtCantidad);
-            this.Controls.Add(this.txtFecha);
-            this.Controls.Add(this.lblEncargado);
-            this.Controls.Add(this.lblEstado);
-            this.Controls.Add(this.lblCantidad);
-            this.Controls.Add(this.lblFechaE);
-            this.Controls.Add(this.lblOrdenesTitulo);
-            this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmOrdenes";
@@ -184,24 +191,25 @@
             this.Text = "frmOrdenes";
             this.Load += new System.EventHandler(this.frmOrdenes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrdenes)).EndInit();
+            this.gpbOrdenes.ResumeLayout(false);
+            this.gpbOrdenes.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblMp;
+        private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.Label lblCantidad;
-        private System.Windows.Forms.Label lblFechaE;
-        private System.Windows.Forms.Label lblOrdenesTitulo;
-        private System.Windows.Forms.Label lblEncargado;
-        private System.Windows.Forms.Label lblEstado;
-        private System.Windows.Forms.TextBox txtFecha;
-        private System.Windows.Forms.TextBox txtCantidad;
-        private System.Windows.Forms.TextBox txtEstado;
-        private System.Windows.Forms.ComboBox cmbEncargado;
+        private System.Windows.Forms.Label lblfecha;
+        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.DataGridView dgvOrdenes;
-        private System.Windows.Forms.Button btnAyuda;
+        private CapaVistaNavegador.Navegador navegador1;
+        private System.Windows.Forms.GroupBox gpbOrdenes;
+        private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.Label lblEstado;
+        private System.Windows.Forms.TextBox txtCantidad;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.ComboBox cmbMp;
     }
 }
