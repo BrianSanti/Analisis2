@@ -25,7 +25,6 @@ C:\Users\Brian\Desktop\Analisis2\EJECUCIONMRP\EJECUCIONMRP\obj\Debug\EJECUCIONMR
 C:\Users\Brian\Desktop\Analisis2\EJECUCIONMRP\EJECUCIONMRP\obj\Debug\EJECUCIONMRP.exe
 C:\Users\Brian\Desktop\Analisis2\EJECUCIONMRP\EJECUCIONMRP\obj\Debug\EJECUCIONMRP.pdb
 C:\Users\Brian\Desktop\Analisis2\EJECUCIONMRP\EJECUCIONMRP\bin\Debug\CapaVistaNavegador.dll
-C:\Users\Brian\Desktop\Analisis2\EJECUCIONMRP\EJECUCIONMRP\bin\Debug\CapaVistaSeguridad.dll
 C:\Users\Brian\Desktop\Analisis2\EJECUCIONMRP\EJECUCIONMRP\bin\Debug\CapaVistaReporteador.dll
 C:\Users\Brian\Desktop\Analisis2\EJECUCIONMRP\EJECUCIONMRP\bin\Debug\CapaVista.dll
 C:\Users\Brian\Desktop\Analisis2\EJECUCIONMRP\EJECUCIONMRP\bin\Debug\CapaControladorNavegador.dll

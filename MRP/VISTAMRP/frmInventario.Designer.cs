@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInventario));
             this.dgv1 = new System.Windows.Forms.DataGridView();
             this.dgv2 = new System.Windows.Forms.DataGridView();
             this.dgv3 = new System.Windows.Forms.DataGridView();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnEstado = new System.Windows.Forms.Button();
-            this.btnAyuda = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv3)).BeginInit();
@@ -49,6 +47,7 @@
             this.dgv1.RowTemplate.Height = 24;
             this.dgv1.Size = new System.Drawing.Size(460, 419);
             this.dgv1.TabIndex = 0;
+            this.dgv1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv1_CellContentClick);
             // 
             // dgv2
             // 
@@ -90,22 +89,11 @@
             this.btnEstado.Text = "S. Estado";
             this.btnEstado.UseVisualStyleBackColor = true;
             // 
-            // btnAyuda
-            // 
-            this.btnAyuda.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAyuda.Image = ((System.Drawing.Image)(resources.GetObject("btnAyuda.Image")));
-            this.btnAyuda.Location = new System.Drawing.Point(1427, 511);
-            this.btnAyuda.Name = "btnAyuda";
-            this.btnAyuda.Size = new System.Drawing.Size(54, 41);
-            this.btnAyuda.TabIndex = 10;
-            this.btnAyuda.UseVisualStyleBackColor = true;
-            // 
             // frmInventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1482, 553);
-            this.Controls.Add(this.btnAyuda);
             this.Controls.Add(this.btnEstado);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.dgv3);
@@ -131,6 +119,5 @@
         private System.Windows.Forms.DataGridView dgv3;
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnEstado;
-        private System.Windows.Forms.Button btnAyuda;
     }
 }

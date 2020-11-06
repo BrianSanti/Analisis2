@@ -87,8 +87,8 @@ namespace VISTAMRP
             navegador1.DatosActualizar = dgvActivos;
             navegador1.procActualizarData();
             navegador1.procCargar();
-            navegador1.ayudaRuta = "AyudasSeguridad/Usuario/ayuda.chm";
-            navegador1.ruta = "Ayuda-Usuario.html";
+            navegador1.ayudaRuta = "AYUDAS/AyudasMRP.chm";
+            navegador1.ruta = "AyudaActivos.html";
         }
 
         private void txtEstado_TextChanged(object sender, EventArgs e)

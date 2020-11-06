@@ -84,5 +84,17 @@ namespace VISTAMRP
                 MessageBox.Show("El Usuario No Cuenta Con Permisos De Acceso A La Aplicación");
             }
         }
+
+        private void controlDeCalidadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmControlCalidad usu = new frmControlCalidad();
+            usu.Show();
+        }
+
+        private void inventariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmInventario usu = new frmInventario();
+            usu.Show();
+        }
     }
 }

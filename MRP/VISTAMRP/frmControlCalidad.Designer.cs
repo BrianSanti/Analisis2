@@ -34,7 +34,6 @@
             this.lblResultado = new System.Windows.Forms.Label();
             this.cmbOrden = new System.Windows.Forms.ComboBox();
             this.cmbInventario = new System.Windows.Forms.ComboBox();
-            this.cmEmpleado = new System.Windows.Forms.ComboBox();
             this.cmbResultado = new System.Windows.Forms.ComboBox();
             this.btnIngresar = new System.Windows.Forms.Button();
             this.gpbControlCalidad = new System.Windows.Forms.GroupBox();
@@ -42,7 +41,14 @@
             this.lblCodigo = new System.Windows.Forms.Label();
             this.txtEstado = new System.Windows.Forms.TextBox();
             this.lblEstado = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.txtEliminar = new System.Windows.Forms.TextBox();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.cmbEmple = new System.Windows.Forms.ComboBox();
+            this.txtModificar = new System.Windows.Forms.TextBox();
             this.gpbControlCalidad.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblOrden
@@ -109,16 +115,6 @@
             this.cmbInventario.TabIndex = 8;
             this.cmbInventario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventInventario);
             // 
-            // cmEmpleado
-            // 
-            this.cmEmpleado.FormattingEnabled = true;
-            this.cmEmpleado.Location = new System.Drawing.Point(267, 221);
-            this.cmEmpleado.Name = "cmEmpleado";
-            this.cmEmpleado.Size = new System.Drawing.Size(203, 34);
-            this.cmEmpleado.TabIndex = 9;
-            this.cmEmpleado.SelectedIndexChanged += new System.EventHandler(this.cmEmpleado_SelectedIndexChanged);
-            this.cmEmpleado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.eventEmpleado);
-            // 
             // cmbResultado
             // 
             this.cmbResultado.FormattingEnabled = true;
@@ -132,21 +128,22 @@
             // btnIngresar
             // 
             this.btnIngresar.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresar.Location = new System.Drawing.Point(181, 434);
+            this.btnIngresar.Location = new System.Drawing.Point(595, 95);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(134, 41);
             this.btnIngresar.TabIndex = 12;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // gpbControlCalidad
             // 
+            this.gpbControlCalidad.Controls.Add(this.cmbEmple);
             this.gpbControlCalidad.Controls.Add(this.txtCodigo);
             this.gpbControlCalidad.Controls.Add(this.lblCodigo);
             this.gpbControlCalidad.Controls.Add(this.txtEstado);
             this.gpbControlCalidad.Controls.Add(this.lblEstado);
             this.gpbControlCalidad.Controls.Add(this.cmbResultado);
-            this.gpbControlCalidad.Controls.Add(this.cmEmpleado);
             this.gpbControlCalidad.Controls.Add(this.cmbInventario);
             this.gpbControlCalidad.Controls.Add(this.cmbOrden);
             this.gpbControlCalidad.Controls.Add(this.lblResultado);
@@ -197,11 +194,72 @@
             this.lblEstado.TabIndex = 11;
             this.lblEstado.Text = "Estado";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(801, 37);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(614, 431);
+            this.dataGridView1.TabIndex = 14;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(595, 159);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(134, 41);
+            this.btnEliminar.TabIndex = 15;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // txtEliminar
+            // 
+            this.txtEliminar.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEliminar.Location = new System.Drawing.Point(599, 225);
+            this.txtEliminar.Name = "txtEliminar";
+            this.txtEliminar.Size = new System.Drawing.Size(129, 31);
+            this.txtEliminar.TabIndex = 16;
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Location = new System.Drawing.Point(595, 277);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(134, 41);
+            this.btnModificar.TabIndex = 17;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // cmbEmple
+            // 
+            this.cmbEmple.FormattingEnabled = true;
+            this.cmbEmple.Location = new System.Drawing.Point(267, 215);
+            this.cmbEmple.Name = "cmbEmple";
+            this.cmbEmple.Size = new System.Drawing.Size(203, 34);
+            this.cmbEmple.TabIndex = 15;
+            // 
+            // txtModificar
+            // 
+            this.txtModificar.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtModificar.Location = new System.Drawing.Point(599, 340);
+            this.txtModificar.Name = "txtModificar";
+            this.txtModificar.Size = new System.Drawing.Size(129, 31);
+            this.txtModificar.TabIndex = 18;
+            // 
             // frmControlCalidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(532, 503);
+            this.ClientSize = new System.Drawing.Size(1442, 503);
+            this.Controls.Add(this.txtModificar);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.txtEliminar);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.gpbControlCalidad);
             this.Controls.Add(this.btnIngresar);
             this.MaximizeBox = false;
@@ -212,7 +270,9 @@
             this.Load += new System.EventHandler(this.frmControlCalidad_Load);
             this.gpbControlCalidad.ResumeLayout(false);
             this.gpbControlCalidad.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -224,7 +284,6 @@
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.ComboBox cmbOrden;
         private System.Windows.Forms.ComboBox cmbInventario;
-        private System.Windows.Forms.ComboBox cmEmpleado;
         private System.Windows.Forms.ComboBox cmbResultado;
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.GroupBox gpbControlCalidad;
@@ -232,5 +291,11 @@
         private System.Windows.Forms.Label lblEstado;
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.TextBox txtEliminar;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.ComboBox cmbEmple;
+        private System.Windows.Forms.TextBox txtModificar;
     }
 }

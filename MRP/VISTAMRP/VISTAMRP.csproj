@@ -31,8 +31,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CapaVistaNavegador">
-      <HintPath>..\..\..\Navegador-main\Navegador\Navegador\CapaVista\bin\Debug\CapaVistaNavegador.dll</HintPath>
+    <Reference Include="CapaControladorNavegador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Navegador-main\Navegador\Navegador\CapaVista\bin\Debug\CapaControladorNavegador.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaControladorSeguridad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Navegador-main\Navegador\Navegador\CapaVista\bin\Debug\CapaControladorSeguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaVistaNavegador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Navegador-main\Navegador\Navegador\CapaVista\bin\Debug\CapaVistaNavegador.dll</HintPath>
     </Reference>
     <Reference Include="CapaVistaSeguridad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
